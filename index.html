@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+      <h1>ToDOList</h1>
+        <div id="main">
+            <div id="enterTask">
+                <label></label>
+                <input type="text" id="newTask" placeholder="Enter Task"/>
+                <button id="newTaskButton">Add Task</button>
+            </div>
+            <div id="pendingTaskContainer">
+                <h4>Pending Tasks</h4>
+                <ul id="pendingTasks">
+                    <li id="pendingPlaceholder" class="task-box placeholder">
+                        <div>
+                            <div class="placeholder-div">Pending Tasks</div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="completedTaskContainer">
+                <h4>Completed Task</h4>
+                <ul id="completedTasks">
+                    <li id="completedPlaceholder" class="task-box placeholder">
+                        <div>
+                            <div class="placeholder-div">Completed Task </div>
+                        </div>
+                    </li>
+                </ul>
+            
+
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

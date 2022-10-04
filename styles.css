@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#enterTask {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: left;
+  color: blue;
+  padding: 5px;
+  background-color: lightgray ;
+  outline: auto;
+  width: 175px;
+}
+
+label {
+  font-size: .9em;
+  color: blue;
+}
+
+#newTaskButton {
+  background-color: lightgray;
+  color: blue;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  outline: auto;
+}
+
+
+h4 {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#pendingTaskContainer {
+  text-align: left;
+  color: blue;
+  padding: 10px;
+  background-color: lightgray ;
+  outline: auto;
+  width: 800px;
+  margin: auto;
+}
+
+#completedTaskContainer {
+  text-align: left;
+  color: blue;
+  padding: 10px;
+  background-color: lightgray;
+  outline: auto;
+  width: 800px;
+  margin: auto;
+
+}
+
+
+.task-box {
+  background-color: rgb(86, 86, 255);
+  height: 5em;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+
+.task-box.placeholder {
+  background-color: lightgray;
+  border: none;
+  color: blueviolet;
+  text-align: left;
+  font-size: .75em;
+}
+
+.placeholder-div {
+  display: flex;
+  align-items: center;
+}
+
+.task-box div {
+  display: inline-flex;
+  height: 100%;
+}
+
+.check-box-div {
+  display: flex;
+  align-items: center;
+  float: left;
+  padding-left: 1em;
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  width: 65%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-div {
+  display: flex;
+  align-items: center;
+  float: right;
+  padding-right: 1em;
+}
+
+.task-box input {
+  border: 2px normal blue;
+}
+
+.task-box h3 {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0px;
+}
+
+.task-box a {
+  color: black;
+  font-size: .75em;
+}
+
+.task-box a:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 480px) {
+  #enterTask {
+      justify-content: space-around;
+  }
+  .title-div {
+      display: flex;
+      align-items: center;
+      margin-left: 4em;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}
